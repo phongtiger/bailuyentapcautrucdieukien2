@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap vao canh a "));
+    let b = parseInt(prompt("nhap vao canh b "));
+    let c = parseInt(prompt("nhap vao canh c "));
+    if((a>0&&b>0&&c>0)&&(a+b)>c&&(b+c)>a&&(c+a)>b){
+        alert("3 canh: " +a+ " , "+b+" , "+ c + "la 3 canh cua tam giac");}
+    if(a==b||b==c||c==a){
+            alert("day la tam giac can");
+            if(a==b&&a==c){
+                alert("day la tam giac deu");
+            }else if ((a*a+b*b==c*c)||(a*a+c*c==b*b)||(a*a==b*b+c*c)){
+                alert("day la tam giac vuong can");
+            }
+    }else if (((a*a+b*b)==c*c)||((a*a+c*c)==b*b)||(a*a==(b*b+c*c))){
+            alert("day la tam giac vuong");
+    }else {
+        alert(" la tam giac thuong");
+    }
+
+</script>
+</body>
+</html>

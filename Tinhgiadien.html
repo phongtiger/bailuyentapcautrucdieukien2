@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //gia dien theo thang < 90 là 1900d, tu 90 den 200 la 2500d, tren 200 la 3500d
+    let sodien = parseInt(prompt("nhap vao so dien"));
+    let tien;
+    if (sodien>200){
+        tien = (sodien-200)*3000+ 110*2500+ 90*1900;
+    }else if(sodien<=200&&sodien>90){
+        tien = (sodien-90)*2500+ 90*1900;
+    }else {
+        tien = sodien * 1900;
+    }
+    document.write("Số điện: "+ sodien+ " thì số tiền là: "+tien);
+
+</script>
+</body>
+</html>

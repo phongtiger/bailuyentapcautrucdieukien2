@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhap a"));
+    let b = parseFloat(prompt("Nhap b"));
+    let c = parseFloat(prompt("Nhap c"));
+    let denta= b*b-4*a*c
+    let x1 = (-b+Math.sqrt(denta))/2*a;
+    let x2 = (b+Math.sqrt(denta))/2*a;
+    if(a=0){
+        alert("day khong la phuong trinh b2!");
+    }else {
+        if(denta<0){
+            alert("phuong trinh vo nghiem!");
+        }else {
+            document.write("a: " +a + "<br>");
+            document.write("b: " +b + "<br>");
+            document.write("c: " +c + "<br>");
+            document.write("Phuong trinh co nghiem x1:" + x1 + "<br>");
+            document.write("Phuong trinh co nghiem x2:" + x2);
+        }
+    }
+</script>
+</body>
+</html>
